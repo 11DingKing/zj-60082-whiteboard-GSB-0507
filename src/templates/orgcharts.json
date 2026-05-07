@@ -1,0 +1,301 @@
+[
+  {
+    "id": "orgchart-hierarchy",
+    "name": "层级组织架构",
+    "icon": "🏢",
+    "shapes": [
+      {
+        "type": "rectangle",
+        "x": 70, "y": 0,
+        "width": 80, "height": 40,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#e94560",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 0, "y": 70,
+        "width": 60, "height": 35,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 80, "y": 70,
+        "width": 60, "height": 35,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 160, "y": 70,
+        "width": 60, "height": 35,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 85, "y": 125,
+        "width": 50,
+        "height": 30,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 1,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "orgchart-matrix",
+    "name": "矩阵组织架构",
+    "icon": "🔲",
+    "shapes": [
+      {
+        "type": "rectangle",
+        "x": 70, "y": 0,
+        "width": 80, "height": 40,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#e94560",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 0, "y": 60,
+        "width": 60, "height": 35,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 80, "y": 60,
+        "width": 60, "height": 35,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 160, "y": 60,
+        "width": 60, "height": 35,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 0, "y": 115,
+        "width": 60, "height": 30,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 1,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 80, "y": 115,
+        "width": 60, "height": 30,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 1,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 160, "y": 115,
+        "width": 60, "height": 30,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 1,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "orgchart-flat",
+    "name": "扁平组织架构",
+    "icon": "📐",
+    "shapes": [
+      {
+        "type": "rectangle",
+        "x": 70, "y": 0,
+        "width": 80, "height": 40,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#e94560",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 0, "y": 60,
+        "width": 45, "height": 30,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 55, "y": 60,
+        "width": 45, "height": 30,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 110, "y": 60,
+        "width": 45, "height": 30,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 165, "y": 60,
+        "width": 45, "height": 30,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 0, "y": 110,
+        "width": 45,
+        "height": 25,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 1,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 55, "y": 110,
+        "width": 45,
+        "height": 25,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 1,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 110, "y": 110,
+        "width": 45,
+        "height": 25,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 1,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 165, "y": 110,
+        "width": 45,
+        "height": 25,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 1,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      }
+    ]
+  }
+]

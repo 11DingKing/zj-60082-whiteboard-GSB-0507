@@ -1,23 +1,25 @@
-import { create } from 'zustand';
-import { UIState } from '../types';
+import { create } from "zustand";
+import { UIState } from "../types";
 
 interface UIStore extends UIState {
   toggleLeftPanel: () => void;
   setLeftPanelCollapsed: (collapsed: boolean) => void;
-  
-  setRightPanelTab: (tab: 'layers' | 'properties') => void;
-  
+  setLeftPanelTab: (tab: "projects" | "templates") => void;
+
+  setRightPanelTab: (tab: "layers" | "properties") => void;
+
   showContextMenu: (x: number, y: number) => void;
   hideContextMenu: () => void;
-  
-  openModal: (modal: keyof UIState['modals']) => void;
-  closeModal: (modal: keyof UIState['modals']) => void;
+
+  openModal: (modal: keyof UIState["modals"]) => void;
+  closeModal: (modal: keyof UIState["modals"]) => void;
   closeAllModals: () => void;
 }
 
 const initialState: UIState = {
   leftPanelCollapsed: false,
-  rightPanelTab: 'layers',
+  leftPanelTab: "projects",
+  rightPanelTab: "layers",
   contextMenu: null,
   modals: {
     newProject: false,
@@ -36,6 +38,10 @@ export const useUIStore = create<UIStore>((set) => ({
 
   setLeftPanelCollapsed: (collapsed) => {
     set({ leftPanelCollapsed: collapsed });
+  },
+
+  setLeftPanelTab: (tab) => {
+    set({ leftPanelTab: tab });
   },
 
   setRightPanelTab: (tab) => {
