@@ -1,0 +1,68 @@
+[
+  {
+    "id": "org-simple",
+    "name": "简单组织架构",
+    "category": "org",
+    "shapes": [
+      { "type": "rectangle", "x": 90, "y": 0, "width": 120, "height": 50, "text": "CEO", "cornerRadius": 8 },
+      { "type": "rectangle", "x": -30, "y": 120, "width": 120, "height": 50, "text": "CTO", "cornerRadius": 8 },
+      { "type": "rectangle", "x": 120, "y": 120, "width": 120, "height": 50, "text": "CFO", "cornerRadius": 8 },
+      { "type": "rectangle", "x": 270, "y": 120, "width": 120, "height": 50, "text": "COO", "cornerRadius": 8 },
+      { "type": "line", "x": 150, "y": 50, "width": 0, "height": 30, "points": [{"x": 150, "y": 50}, {"x": 150, "y": 80}] },
+      { "type": "line", "x": 30, "y": 80, "width": 240, "height": 0, "points": [{"x": 30, "y": 80}, {"x": 330, "y": 80}] },
+      { "type": "line", "x": 30, "y": 80, "width": 0, "height": 40, "points": [{"x": 30, "y": 80}, {"x": 30, "y": 120}] },
+      { "type": "line", "x": 180, "y": 80, "width": 0, "height": 40, "points": [{"x": 180, "y": 80}, {"x": 180, "y": 120}] },
+      { "type": "line", "x": 330, "y": 80, "width": 0, "height": 40, "points": [{"x": 330, "y": 80}, {"x": 330, "y": 120}] }
+    ]
+  },
+  {
+    "id": "org-department",
+    "name": "部门组织架构",
+    "category": "org",
+    "shapes": [
+      { "type": "rectangle", "x": 170, "y": 0, "width": 140, "height": 50, "text": "总经理", "cornerRadius": 8 },
+      { "type": "rectangle", "x": -20, "y": 120, "width": 130, "height": 50, "text": "技术部", "cornerRadius": 8 },
+      { "type": "rectangle", "x": 140, "y": 120, "width": 130, "height": 50, "text": "市场部", "cornerRadius": 8 },
+      { "type": "rectangle", "x": 300, "y": 120, "width": 130, "height": 50, "text": "财务部", "cornerRadius": 8 },
+      { "type": "rectangle", "x": -50, "y": 240, "width": 100, "height": 40, "text": "前端组" },
+      { "type": "rectangle", "x": 70, "y": 240, "width": 100, "height": 40, "text": "后端组" },
+      { "type": "rectangle", "x": 160, "y": 240, "width": 100, "height": 40, "text": "品牌组" },
+      { "type": "line", "x": 240, "y": 50, "width": 0, "height": 30, "points": [{"x": 240, "y": 50}, {"x": 240, "y": 80}] },
+      { "type": "line", "x": 45, "y": 80, "width": 285, "height": 0, "points": [{"x": 45, "y": 80}, {"x": 365, "y": 80}] },
+      { "type": "line", "x": 45, "y": 80, "width": 0, "height": 40, "points": [{"x": 45, "y": 80}, {"x": 45, "y": 120}] },
+      { "type": "line", "x": 205, "y": 80, "width": 0, "height": 40, "points": [{"x": 205, "y": 80}, {"x": 205, "y": 120}] },
+      { "type": "line", "x": 365, "y": 80, "width": 0, "height": 40, "points": [{"x": 365, "y": 80}, {"x": 365, "y": 120}] },
+      { "type": "line", "x": 45, "y": 170, "width": 0, "height": 30, "points": [{"x": 45, "y": 170}, {"x": 45, "y": 200}] },
+      { "type": "line", "x": 0, "y": 200, "width": 90, "height": 0, "points": [{"x": 0, "y": 200}, {"x": 120, "y": 200}] },
+      { "type": "line", "x": 0, "y": 200, "width": 0, "height": 40, "points": [{"x": 0, "y": 200}, {"x": 0, "y": 240}] },
+      { "type": "line", "x": 120, "y": 200, "width": 0, "height": 40, "points": [{"x": 120, "y": 200}, {"x": 120, "y": 240}] },
+      { "type": "line", "x": 205, "y": 170, "width": 0, "height": 70, "points": [{"x": 205, "y": 170}, {"x": 205, "y": 240}] }
+    ]
+  },
+  {
+    "id": "org-hierarchy",
+    "name": "层级组织架构",
+    "category": "org",
+    "shapes": [
+      { "type": "rectangle", "x": 120, "y": 0, "width": 120, "height": 50, "text": "董事长", "cornerRadius": 8 },
+      { "type": "rectangle", "x": 120, "y": 100, "width": 120, "height": 50, "text": "总裁", "cornerRadius": 8 },
+      { "type": "rectangle", "x": -30, "y": 210, "width": 110, "height": 45, "text": "副总裁A", "cornerRadius": 8 },
+      { "type": "rectangle", "x": 125, "y": 210, "width": 110, "height": 45, "text": "副总裁B", "cornerRadius": 8 },
+      { "type": "rectangle", "x": 280, "y": 210, "width": 110, "height": 45, "text": "副总裁C", "cornerRadius": 8 },
+      { "type": "rectangle", "x": -50, "y": 310, "width": 90, "height": 40, "text": "部门1" },
+      { "type": "rectangle", "x": 50, "y": 310, "width": 90, "height": 40, "text": "部门2" },
+      { "type": "rectangle", "x": 130, "y": 310, "width": 90, "height": 40, "text": "部门3" },
+      { "type": "line", "x": 180, "y": 50, "width": 0, "height": 50, "points": [{"x": 180, "y": 50}, {"x": 180, "y": 100}] },
+      { "type": "line", "x": 180, "y": 150, "width": 0, "height": 20, "points": [{"x": 180, "y": 150}, {"x": 180, "y": 170}] },
+      { "type": "line", "x": 25, "y": 170, "width": 255, "height": 0, "points": [{"x": 25, "y": 170}, {"x": 335, "y": 170}] },
+      { "type": "line", "x": 25, "y": 170, "width": 0, "height": 40, "points": [{"x": 25, "y": 170}, {"x": 25, "y": 210}] },
+      { "type": "line", "x": 180, "y": 170, "width": 0, "height": 40, "points": [{"x": 180, "y": 170}, {"x": 180, "y": 210}] },
+      { "type": "line", "x": 335, "y": 170, "width": 0, "height": 40, "points": [{"x": 335, "y": 170}, {"x": 335, "y": 210}] },
+      { "type": "line", "x": 25, "y": 255, "width": 0, "height": 20, "points": [{"x": 25, "y": 255}, {"x": 25, "y": 275}] },
+      { "type": "line", "x": -5, "y": 275, "width": 60, "height": 0, "points": [{"x": -5, "y": 275}, {"x": 95, "y": 275}] },
+      { "type": "line", "x": -5, "y": 275, "width": 0, "height": 35, "points": [{"x": -5, "y": 275}, {"x": -5, "y": 310}] },
+      { "type": "line", "x": 95, "y": 275, "width": 0, "height": 35, "points": [{"x": 95, "y": 275}, {"x": 95, "y": 310}] },
+      { "type": "line", "x": 180, "y": 255, "width": 0, "height": 55, "points": [{"x": 180, "y": 255}, {"x": 180, "y": 310}] }
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "flowchart-basic",
+    "name": "基本流程图",
+    "category": "flowchart",
+    "shapes": [
+      { "type": "rectangle", "x": 0, "y": 0, "width": 120, "height": 50, "text": "开始", "cornerRadius": 20 },
+      { "type": "rectangle", "x": 0, "y": 90, "width": 120, "height": 50, "text": "处理步骤" },
+      { "type": "diamond", "x": 10, "y": 180, "width": 100, "height": 80, "text": "判断" },
+      { "type": "rectangle", "x": -140, "y": 310, "width": 120, "height": 50, "text": "条件A" },
+      { "type": "rectangle", "x": 140, "y": 310, "width": 120, "height": 50, "text": "条件B" },
+      { "type": "rectangle", "x": 0, "y": 410, "width": 120, "height": 50, "text": "结束", "cornerRadius": 20 },
+      { "type": "arrow", "x": 60, "y": 50, "width": 0, "height": 40, "points": [{"x": 60, "y": 50}, {"x": 60, "y": 90}] },
+      { "type": "arrow", "x": 60, "y": 140, "width": 0, "height": 40, "points": [{"x": 60, "y": 140}, {"x": 60, "y": 180}] },
+      { "type": "arrow", "x": 10, "y": 260, "width": 0, "height": 50, "points": [{"x": 10, "y": 260}, {"x": -80, "y": 310}] },
+      { "type": "arrow", "x": 110, "y": 260, "width": 0, "height": 50, "points": [{"x": 110, "y": 260}, {"x": 200, "y": 310}] },
+      { "type": "arrow", "x": -80, "y": 360, "width": 0, "height": 50, "points": [{"x": -80, "y": 360}, {"x": 60, "y": 410}] },
+      { "type": "arrow", "x": 200, "y": 360, "width": 0, "height": 50, "points": [{"x": 200, "y": 360}, {"x": 60, "y": 410}] }
+    ]
+  },
+  {
+    "id": "flowchart-decision",
+    "name": "决策流程图",
+    "category": "flowchart",
+    "shapes": [
+      { "type": "circle", "x": 0, "y": 0, "width": 60, "height": 60, "text": "S" },
+      { "type": "rectangle", "x": -30, "y": 100, "width": 120, "height": 50, "text": "输入数据" },
+      { "type": "diamond", "x": -20, "y": 200, "width": 100, "height": 80, "text": "有效?" },
+      { "type": "rectangle", "x": -30, "y": 330, "width": 120, "height": 50, "text": "处理" },
+      { "type": "rectangle", "x": 150, "y": 200, "width": 120, "height": 50, "text": "报错" },
+      { "type": "circle", "x": 0, "y": 430, "width": 60, "height": 60, "text": "E" },
+      { "type": "arrow", "x": 30, "y": 60, "width": 0, "height": 40, "points": [{"x": 30, "y": 60}, {"x": 30, "y": 100}] },
+      { "type": "arrow", "x": 30, "y": 150, "width": 0, "height": 50, "points": [{"x": 30, "y": 150}, {"x": 30, "y": 200}] },
+      { "type": "arrow", "x": 30, "y": 280, "width": 0, "height": 50, "points": [{"x": 30, "y": 280}, {"x": 30, "y": 330}] },
+      { "type": "arrow", "x": 80, "y": 240, "width": 70, "height": 0, "points": [{"x": 80, "y": 240}, {"x": 150, "y": 240}] },
+      { "type": "arrow", "x": 30, "y": 380, "width": 0, "height": 50, "points": [{"x": 30, "y": 380}, {"x": 30, "y": 430}] }
+    ]
+  },
+  {
+    "id": "flowchart-iteration",
+    "name": "迭代流程图",
+    "category": "flowchart",
+    "shapes": [
+      { "type": "rectangle", "x": 0, "y": 0, "width": 120, "height": 50, "text": "初始化", "cornerRadius": 20 },
+      { "type": "diamond", "x": 10, "y": 90, "width": 100, "height": 80, "text": "条件" },
+      { "type": "rectangle", "x": 0, "y": 220, "width": 120, "height": 50, "text": "执行操作" },
+      { "type": "rectangle", "x": 0, "y": 320, "width": 120, "height": 50, "text": "更新状态" },
+      { "type": "rectangle", "x": 170, "y": 90, "width": 120, "height": 50, "text": "完成" },
+      { "type": "arrow", "x": 60, "y": 50, "width": 0, "height": 40, "points": [{"x": 60, "y": 50}, {"x": 60, "y": 90}] },
+      { "type": "arrow", "x": 60, "y": 170, "width": 0, "height": 50, "points": [{"x": 60, "y": 170}, {"x": 60, "y": 220}] },
+      { "type": "arrow", "x": 60, "y": 270, "width": 0, "height": 50, "points": [{"x": 60, "y": 270}, {"x": 60, "y": 320}] },
+      { "type": "arrow", "x": 0, "y": 345, "width": 0, "height": 0, "points": [{"x": 0, "y": 345}, {"x": -40, "y": 345}, {"x": -40, "y": 130}, {"x": 10, "y": 130}] },
+      { "type": "arrow", "x": 110, "y": 130, "width": 60, "height": 0, "points": [{"x": 110, "y": 115}, {"x": 170, "y": 115}] }
+    ]
+  },
+  {
+    "id": "flowchart-parallel",
+    "name": "并行流程图",
+    "category": "flowchart",
+    "shapes": [
+      { "type": "rectangle", "x": 30, "y": 0, "width": 120, "height": 50, "text": "开始", "cornerRadius": 20 },
+      { "type": "rectangle", "x": -120, "y": 110, "width": 120, "height": 50, "text": "分支A" },
+      { "type": "rectangle", "x": 30, "y": 110, "width": 120, "height": 50, "text": "分支B" },
+      { "type": "rectangle", "x": 180, "y": 110, "width": 120, "height": 50, "text": "分支C" },
+      { "type": "rectangle", "x": 30, "y": 220, "width": 120, "height": 50, "text": "合并" },
+      { "type": "rectangle", "x": 30, "y": 310, "width": 120, "height": 50, "text": "结束", "cornerRadius": 20 },
+      { "type": "arrow", "x": 60, "y": 50, "width": 0, "height": 60, "points": [{"x": 60, "y": 50}, {"x": -60, "y": 110}] },
+      { "type": "arrow", "x": 90, "y": 50, "width": 0, "height": 60, "points": [{"x": 90, "y": 50}, {"x": 90, "y": 110}] },
+      { "type": "arrow", "x": 120, "y": 50, "width": 0, "height": 60, "points": [{"x": 120, "y": 50}, {"x": 240, "y": 110}] },
+      { "type": "arrow", "x": 60, "y": 160, "width": 0, "height": 60, "points": [{"x": -60, "y": 160}, {"x": 60, "y": 220}] },
+      { "type": "arrow", "x": 90, "y": 160, "width": 0, "height": 60, "points": [{"x": 90, "y": 160}, {"x": 90, "y": 220}] },
+      { "type": "arrow", "x": 240, "y": 160, "width": 0, "height": 60, "points": [{"x": 240, "y": 160}, {"x": 120, "y": 220}] },
+      { "type": "arrow", "x": 90, "y": 270, "width": 0, "height": 40, "points": [{"x": 90, "y": 270}, {"x": 90, "y": 310}] }
+    ]
+  }
+]
