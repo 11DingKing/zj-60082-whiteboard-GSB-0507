@@ -797,7 +797,8 @@ body,
   background-color: #4dabf7;
   pointer-events: none;
   z-index: 10;
-  animation: snapGuideFadeIn 80ms ease-out;
+  opacity: 0;
+  animation: snapGuideFadeIn 80ms ease-out forwards;
 }
 
 @keyframes snapGuideFadeIn {

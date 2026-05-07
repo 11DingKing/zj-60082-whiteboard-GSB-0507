@@ -76,8 +76,10 @@ const LeftPanel: React.FC = () => {
 
   const insertTemplate = (template: Template) => {
     const { offsetX, offsetY, zoom } = useCanvasStore.getState();
-    const canvasCenterX = -offsetX / zoom;
-    const canvasCenterY = -offsetY / zoom;
+    const defaultViewportWidth = 800;
+    const defaultViewportHeight = 600;
+    const canvasCenterX = (defaultViewportWidth / 2 - offsetX) / zoom;
+    const canvasCenterY = (defaultViewportHeight / 2 - offsetY) / zoom;
 
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
     template.shapes.forEach((s) => {
@@ -227,8 +229,9 @@ const LeftPanel: React.FC = () => {
           </div>
           <div className="template-grid">
             {currentCategory?.templates.map((template) => (
-              <div
+              <button
                 key={template.id}
+                type="button"
                 className="template-card"
                 onClick={() => insertTemplate(template)}
               >
@@ -236,7 +239,7 @@ const LeftPanel: React.FC = () => {
                   <span className="template-icon">{template.icon}</span>
                 </div>
                 <div className="template-name">{template.name}</div>
-              </div>
+              </button>
             ))}
           </div>
         </div>
