@@ -1,0 +1,71 @@
+[
+  {
+    "id": "sequence-basic",
+    "name": "基本时序图",
+    "category": "sequence",
+    "shapes": [
+      { "type": "rectangle", "x": 0, "y": 0, "width": 100, "height": 40, "text": "客户端" },
+      { "type": "rectangle", "x": 180, "y": 0, "width": 100, "height": 40, "text": "服务端" },
+      { "type": "line", "x": 50, "y": 40, "width": 0, "height": 200, "points": [{"x": 50, "y": 40}, {"x": 50, "y": 240}] },
+      { "type": "line", "x": 230, "y": 40, "width": 0, "height": 200, "points": [{"x": 230, "y": 40}, {"x": 230, "y": 240}] },
+      { "type": "arrow", "x": 50, "y": 70, "width": 180, "height": 0, "points": [{"x": 50, "y": 70}, {"x": 230, "y": 70}] },
+      { "type": "text", "x": 100, "y": 55, "width": 80, "height": 20, "text": "请求" },
+      { "type": "arrow", "x": 230, "y": 120, "width": 180, "height": 0, "points": [{"x": 230, "y": 120}, {"x": 50, "y": 120}] },
+      { "type": "text", "x": 100, "y": 105, "width": 80, "height": 20, "text": "响应" },
+      { "type": "arrow", "x": 50, "y": 170, "width": 180, "height": 0, "points": [{"x": 50, "y": 170}, {"x": 230, "y": 170}] },
+      { "type": "text", "x": 100, "y": 155, "width": 80, "height": 20, "text": "确认" },
+      { "type": "rectangle", "x": 0, "y": 220, "width": 100, "height": 20, "text": "" },
+      { "type": "rectangle", "x": 180, "y": 220, "width": 100, "height": 20, "text": "" }
+    ]
+  },
+  {
+    "id": "sequence-login",
+    "name": "登录时序图",
+    "category": "sequence",
+    "shapes": [
+      { "type": "rectangle", "x": 0, "y": 0, "width": 80, "height": 40, "text": "用户" },
+      { "type": "rectangle", "x": 150, "y": 0, "width": 80, "height": 40, "text": "前端" },
+      { "type": "rectangle", "x": 300, "y": 0, "width": 80, "height": 40, "text": "后端" },
+      { "type": "rectangle", "x": 450, "y": 0, "width": 80, "height": 40, "text": "数据库" },
+      { "type": "line", "x": 40, "y": 40, "width": 0, "height": 280, "points": [{"x": 40, "y": 40}, {"x": 40, "y": 320}] },
+      { "type": "line", "x": 190, "y": 40, "width": 0, "height": 280, "points": [{"x": 190, "y": 40}, {"x": 190, "y": 320}] },
+      { "type": "line", "x": 340, "y": 40, "width": 0, "height": 280, "points": [{"x": 340, "y": 40}, {"x": 340, "y": 320}] },
+      { "type": "line", "x": 490, "y": 40, "width": 0, "height": 280, "points": [{"x": 490, "y": 40}, {"x": 490, "y": 320}] },
+      { "type": "arrow", "x": 40, "y": 70, "width": 150, "height": 0, "points": [{"x": 40, "y": 70}, {"x": 190, "y": 70}] },
+      { "type": "text", "x": 70, "y": 55, "width": 80, "height": 20, "text": "输入账号" },
+      { "type": "arrow", "x": 190, "y": 120, "width": 150, "height": 0, "points": [{"x": 190, "y": 120}, {"x": 340, "y": 120}] },
+      { "type": "text", "x": 210, "y": 105, "width": 80, "height": 20, "text": "验证请求" },
+      { "type": "arrow", "x": 340, "y": 170, "width": 150, "height": 0, "points": [{"x": 340, "y": 170}, {"x": 490, "y": 170}] },
+      { "type": "text", "x": 360, "y": 155, "width": 80, "height": 20, "text": "查询用户" },
+      { "type": "arrow", "x": 490, "y": 210, "width": 150, "height": 0, "points": [{"x": 490, "y": 210}, {"x": 340, "y": 210}] },
+      { "type": "text", "x": 360, "y": 195, "width": 80, "height": 20, "text": "返回数据" },
+      { "type": "arrow", "x": 340, "y": 260, "width": 150, "height": 0, "points": [{"x": 340, "y": 260}, {"x": 190, "y": 260}] },
+      { "type": "text", "x": 210, "y": 245, "width": 80, "height": 20, "text": "Token" }
+    ]
+  },
+  {
+    "id": "sequence-api",
+    "name": "API调用时序图",
+    "category": "sequence",
+    "shapes": [
+      { "type": "rectangle", "x": 0, "y": 0, "width": 80, "height": 40, "text": "App" },
+      { "type": "rectangle", "x": 150, "y": 0, "width": 80, "height": 40, "text": "网关" },
+      { "type": "rectangle", "x": 300, "y": 0, "width": 80, "height": 40, "text": "服务A" },
+      { "type": "rectangle", "x": 450, "y": 0, "width": 80, "height": 40, "text": "缓存" },
+      { "type": "line", "x": 40, "y": 40, "width": 0, "height": 240, "points": [{"x": 40, "y": 40}, {"x": 40, "y": 280}] },
+      { "type": "line", "x": 190, "y": 40, "width": 0, "height": 240, "points": [{"x": 190, "y": 40}, {"x": 190, "y": 280}] },
+      { "type": "line", "x": 340, "y": 40, "width": 0, "height": 240, "points": [{"x": 340, "y": 40}, {"x": 340, "y": 280}] },
+      { "type": "line", "x": 490, "y": 40, "width": 0, "height": 240, "points": [{"x": 490, "y": 40}, {"x": 490, "y": 280}] },
+      { "type": "arrow", "x": 40, "y": 70, "width": 150, "height": 0, "points": [{"x": 40, "y": 70}, {"x": 190, "y": 70}] },
+      { "type": "text", "x": 70, "y": 55, "width": 80, "height": 20, "text": "API请求" },
+      { "type": "arrow", "x": 190, "y": 110, "width": 150, "height": 0, "points": [{"x": 190, "y": 110}, {"x": 340, "y": 110}] },
+      { "type": "text", "x": 210, "y": 95, "width": 80, "height": 20, "text": "路由转发" },
+      { "type": "arrow", "x": 340, "y": 150, "width": 150, "height": 0, "points": [{"x": 340, "y": 150}, {"x": 490, "y": 150}] },
+      { "type": "text", "x": 360, "y": 135, "width": 80, "height": 20, "text": "查缓存" },
+      { "type": "arrow", "x": 490, "y": 190, "width": 150, "height": 0, "points": [{"x": 490, "y": 190}, {"x": 340, "y": 190}] },
+      { "type": "text", "x": 360, "y": 175, "width": 80, "height": 20, "text": "缓存结果" },
+      { "type": "arrow", "x": 340, "y": 230, "width": 150, "height": 0, "points": [{"x": 340, "y": 230}, {"x": 40, "y": 230}] },
+      { "type": "text", "x": 140, "y": 215, "width": 80, "height": 20, "text": "响应数据" }
+    ]
+  }
+]
