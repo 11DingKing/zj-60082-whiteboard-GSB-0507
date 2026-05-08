@@ -118,8 +118,8 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
   } = useSelectionStore();
   const { saveState, canUndo, canRedo, undo, redo } = useHistoryStore();
 
-  const [dragOffsets, setDragOffsets] = useState<Map<string, Point>>(new Map());
-  const [originalShapes, setOriginalShapes] = useState<Shape[]>([]);
+  const dragOffsetsRef = useRef<Map<string, Point>>(new Map());
+  const originalShapesRef = useRef<Shape[]>([]);
   const [textEditorShape, setTextEditorShape] = useState<TextShape | null>(
     null,
   );
@@ -539,7 +539,7 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
                 centerY,
               });
 
-              setOriginalShapes(selectedShapes.map((s) => ({ ...s })));
+              originalShapesRef.current = selectedShapes.map((s) => ({ ...s }));
             }
           }
           return;
@@ -573,8 +573,8 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
             });
           });
 
-          setDragOffsets(offsets);
-          setOriginalShapes(selectedShapes.map((s) => ({ ...s })));
+          dragOffsetsRef.current = offsets;
+          originalShapesRef.current = selectedShapes.map((s) => ({ ...s }));
         } else {
           clearSelection();
           startSelection(canvasPoint.x, canvasPoint.y);
@@ -605,7 +605,6 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
       createShape,
       isPointOnRotateHandle,
       getShapesBoundingBox,
-      setOriginalShapes,
     ],
   );
 
@@ -661,7 +660,7 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
 
       if (isDragging && selectedShapeIds.length > 0) {
         selectedShapeIds.forEach((id) => {
-          const offset = dragOffsets.get(id);
+          const offset = dragOffsetsRef.current.get(id);
           if (offset) {
             let newX = canvasPoint.x + offset.x;
             let newY = canvasPoint.y + offset.y;
@@ -727,7 +726,6 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
       updateSelection,
       isDragging,
       selectedShapeIds,
-      dragOffsets,
       updateShape,
       drawingState.isDrawing,
       updateDrawingShape,
@@ -768,7 +766,7 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
       if (isDragging && selectedShapeIds.length > 0) {
         setIsDragging(false);
         setSnapLines([]);
-        saveState([...shapes]);
+        saveState([...useProjectStore.getState().shapes]);
         updateConnectors(selectedShapeIds);
         return;
       }
@@ -994,6 +992,7 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
 
   useEffect(() => {
     initRenderer();
+    render();
     window.addEventListener("resize", handleResize);
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("keyup", handleKeyUp);
@@ -1003,7 +1002,7 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("keyup", handleKeyUp);
     };
-  }, [initRenderer, handleResize, handleKeyDown, handleKeyUp]);
+  }, [initRenderer, render, handleResize, handleKeyDown, handleKeyUp]);
 
   useEffect(() => {
     render();
