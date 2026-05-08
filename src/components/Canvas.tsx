@@ -229,6 +229,7 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
     offsetY,
     zoom,
     showGrid,
+    shapes,
     getSortedShapes,
     isSelecting,
     selectionBox,
@@ -277,9 +278,6 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
             height: height + padding * 2,
           })
         ) {
-          if (shape.groupId) {
-            return shapes.find((s) => s.id === shape.groupId) || shape;
-          }
           return shape;
         }
       }
@@ -550,20 +548,36 @@ const Canvas: React.FC<CanvasProps> = ({ onTextEdit }) => {
         if (clickedShape) {
           const isMultiSelect = e.ctrlKey || e.metaKey;
 
+          let idsToSelect: string[];
+          if (clickedShape.groupId) {
+            idsToSelect = shapes
+              .filter((s) => s.groupId === clickedShape.groupId)
+              .map((s) => s.id);
+          } else {
+            idsToSelect = [clickedShape.id];
+          }
+
           if (isMultiSelect) {
-            selectShape(clickedShape.id, true);
-          } else if (!selectedShapeIds.includes(clickedShape.id)) {
-            clearSelection();
-            selectShape(clickedShape.id);
+            idsToSelect.forEach((id) => selectShape(id, true));
+          } else {
+            const alreadySelected = idsToSelect.every((id) =>
+              selectedShapeIds.includes(id),
+            );
+            if (!alreadySelected) {
+              clearSelection();
+              idsToSelect.forEach((id) => selectShape(id, true));
+            }
           }
 
           setIsDragging(true, canvasPoint.x, canvasPoint.y);
 
-          const selectedShapes = getShapes(
-            selectedShapeIds.includes(clickedShape.id)
+          const finalSelectedIds = clickedShape.groupId
+            ? idsToSelect
+            : selectedShapeIds.includes(clickedShape.id)
               ? selectedShapeIds
-              : [clickedShape.id],
-          );
+              : [clickedShape.id];
+
+          const selectedShapes = getShapes(finalSelectedIds);
 
           const offsets = new Map<string, Point>();
           selectedShapes.forEach((shape) => {
