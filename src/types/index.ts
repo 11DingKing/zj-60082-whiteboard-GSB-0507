@@ -1,17 +1,17 @@
-export type ToolType = 
-  | 'select'
-  | 'rectangle'
-  | 'circle'
-  | 'ellipse'
-  | 'triangle'
-  | 'diamond'
-  | 'line'
-  | 'arrow'
-  | 'pen'
-  | 'text'
-  | 'connector';
+export type ToolType =
+  | "select"
+  | "rectangle"
+  | "circle"
+  | "ellipse"
+  | "triangle"
+  | "diamond"
+  | "line"
+  | "arrow"
+  | "pen"
+  | "text"
+  | "connector";
 
-export type BorderStyle = 'solid' | 'dashed' | 'dotted';
+export type BorderStyle = "solid" | "dashed" | "dotted";
 
 export interface Point {
   x: number;
@@ -50,45 +50,45 @@ export interface BaseShape {
 }
 
 export interface RectangleShape extends BaseShape {
-  type: 'rectangle';
+  type: "rectangle";
   cornerRadius: number;
 }
 
 export interface CircleShape extends BaseShape {
-  type: 'circle';
+  type: "circle";
 }
 
 export interface EllipseShape extends BaseShape {
-  type: 'ellipse';
+  type: "ellipse";
 }
 
 export interface TriangleShape extends BaseShape {
-  type: 'triangle';
+  type: "triangle";
 }
 
 export interface DiamondShape extends BaseShape {
-  type: 'diamond';
+  type: "diamond";
 }
 
 export interface LineShape extends BaseShape {
-  type: 'line';
+  type: "line";
   points: Point[];
 }
 
 export interface ArrowShape extends BaseShape {
-  type: 'arrow';
+  type: "arrow";
   points: Point[];
   arrowHeadLength: number;
 }
 
 export interface PenShape extends BaseShape {
-  type: 'pen';
+  type: "pen";
   points: Point[];
   pressure: number[];
 }
 
 export interface TextShape extends BaseShape {
-  type: 'text';
+  type: "text";
   text: string;
   fontSize: number;
   fontFamily: string;
@@ -96,7 +96,7 @@ export interface TextShape extends BaseShape {
 }
 
 export interface ConnectorShape extends BaseShape {
-  type: 'connector';
+  type: "connector";
   startShapeId: string;
   startPosition: Point;
   endShapeId?: string;
@@ -105,11 +105,11 @@ export interface ConnectorShape extends BaseShape {
 }
 
 export interface GroupShape extends BaseShape {
-  type: 'group';
+  type: "group";
   children: string[];
 }
 
-export type Shape = 
+export type Shape =
   | RectangleShape
   | CircleShape
   | EllipseShape
@@ -177,7 +177,8 @@ export interface HistoryState {
 
 export interface UIState {
   leftPanelCollapsed: boolean;
-  rightPanelTab: 'layers' | 'properties';
+  leftPanelTab: "projects" | "templates";
+  rightPanelTab: "layers" | "properties";
   contextMenu: {
     visible: boolean;
     x: number;
@@ -192,8 +193,9 @@ export interface UIState {
 }
 
 export interface SmartGuide {
-  type: 'horizontal' | 'vertical';
+  type: "horizontal" | "vertical";
   position: number;
+  category?: "edge" | "center" | "spacing";
 }
 
 export interface MouseState {

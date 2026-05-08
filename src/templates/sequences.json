@@ -1,0 +1,244 @@
+[
+  {
+    "id": "sequence-basic",
+    "name": "基本时序图",
+    "icon": "⏱️",
+    "shapes": [
+      {
+        "type": "rectangle",
+        "x": 0, "y": 0,
+        "width": 60, "height": 40,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 120, "y": 0,
+        "width": 60, "height": 40,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 240, "y": 0,
+        "width": 60, "height": 40,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 10, "y": 60,
+        "width": 40, "height": 100,
+        "cornerRadius": 2,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 0.6
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 130, "y": 80,
+        "width": 40, "height": 80,
+        "cornerRadius": 2,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 0.6
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 250, "y": 100,
+        "width": 40, "height": 60,
+        "cornerRadius": 2,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 0.6
+        }
+      }
+    ]
+  },
+  {
+    "id": "sequence-loop",
+    "name": "循环时序图",
+    "icon": "🔁",
+    "shapes": [
+      {
+        "type": "rectangle",
+        "x": 0, "y": 0,
+        "width": 60, "height": 40,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 140, "y": 0,
+        "width": 60, "height": 40,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "diamond",
+        "x": 50, "y": 60,
+        "width": 100, "height": 50,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 60, "y": 140,
+        "width": 80, "height": 40,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "ellipse",
+        "x": 70, "y": 210,
+        "width": 60, "height": 40,
+        "style": {
+          "fillColor": "#16213e",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sequence-alt",
+    "name": "分支时序图",
+    "icon": "⚡",
+    "shapes": [
+      {
+        "type": "rectangle",
+        "x": 0, "y": 0,
+        "width": 50, "height": 35,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 100, "y": 0,
+        "width": 50, "height": 35,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 200, "y": 0,
+        "width": 50, "height": 35,
+        "cornerRadius": 6,
+        "style": {
+          "fillColor": "#0f3460",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 10, "y": 55,
+        "width": 230, "height": 30,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "#1a4a7a",
+          "strokeColor": "#e94560",
+          "strokeWidth": 2,
+          "strokeStyle": "dashed",
+          "opacity": 1
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 10, "y": 100,
+        "width": 110,
+        "height": 60,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "transparent",
+          "strokeColor": "#e94560",
+          "strokeWidth": 1,
+          "strokeStyle": "dashed",
+          "opacity": 0.7
+        }
+      },
+      {
+        "type": "rectangle",
+        "x": 130, "y": 100,
+        "width": 110,
+        "height": 60,
+        "cornerRadius": 4,
+        "style": {
+          "fillColor": "transparent",
+          "strokeColor": "#e94560",
+          "strokeWidth": 1,
+          "strokeStyle": "dashed",
+          "opacity": 0.7
+        }
+      }
+    ]
+  }
+]
